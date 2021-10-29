@@ -3,15 +3,15 @@ package com.crdc.wayne.testng.simple;
 import com.crdc.wayne.testng.BaseNGTest;
 import org.testng.annotations.Test;
 
-public class NGTestGroup extends BaseNGTest {
-    @Test(groups = { "fast" })
+public class NGTest1st extends BaseNGTest {
+    @Test(groups = {"A"})
     public void aFastTest() {
-        System.out.println("Fast test");
+        System.out.println("NGTest1st -> Fast test");
     }
 
-    @Test(groups = { "slow" })
+    @Test
     public void aSlowTest() {
-        System.out.println("Slow test");
+        System.out.println("NGTest1st -> Slow test");
 
     }
 

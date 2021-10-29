@@ -1,8 +1,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Suite1" verbose="1" >
-    <test name="Regression1">
-        <classes>
-            <class name="com.crdc.wayne.testng.simple.NGTestGroup"/>
-        </classes>
+<suite name="Suite1" verbose="1">
+    <test name="NgTestGroup">
+        <groups>
+            <run>
+                <!-- the full name of group -->
+                <include name="groupA"/>
+                <include name="groupC"/>
+            </run>
+        </groups>
+        <!--<classes>
+            <class name="com.crdc.wayne.testng.simple.NgTestGroup" />
+        </classes>-->
+        <packages>
+            <package name="com.crdc.wayne.testng.simple" />
+        </packages>
     </test>
 </suite>
